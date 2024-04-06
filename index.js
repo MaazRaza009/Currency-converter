@@ -31,4 +31,5 @@ let toamount = currency[user_answer.to];
 let amount = user_answer.amount;
 let baseAmount = amount / fromamount; //USD base currency
 let convertedAmount = baseAmount * toamount;
-console.log(convertedAmount);
+let roundNumber = convertedAmount.toFixed(2);
+console.log(roundNumber);
