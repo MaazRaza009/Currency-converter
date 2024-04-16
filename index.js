@@ -2,23 +2,28 @@
 import inquirer from "inquirer";
 const currency = {
     USD: 1,
-    EUR: 0.91,
+    EUR: 0.94,
     GBP: 0.76,
-    IND: 74.57,
-    PKR: 280
+    INR: 83.63,
+    PKR: 278.12,
+    ALL: 95.00,
+    AED: 3.76,
+    NZD: 1.70,
+    AFN: 72.21,
+    KWD: 0.31
 };
 let user_answer = await inquirer.prompt([
     {
         name: "from",
         message: "Enter from currency:",
         type: "list",
-        choices: ["USD", "EUR", "GBP", "IND", "PKR"]
+        choices: ["USD", "EUR", "GBP", "INR", "PKR", "ALL", "AED", "NZD", "AFN", "KWD"]
     },
     {
         name: "to",
         message: "Enter to currency:",
         type: "list",
-        choices: ["USD", "EUR", "GBP", "IND", "PKR"]
+        choices: ["USD", "EUR", "GBP", "IND", "PKR", "ALL", "AED", "NZD", "AFN", "KWD"]
     },
     {
         name: "amount",
